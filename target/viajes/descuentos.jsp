@@ -47,10 +47,10 @@
     <section>
         <div class="row text-center">
             <div class="col align-self-center ">
-                <h2 class="display-6 fs-6 ">Calculá tu descuento <span class="fs-1"
+                <h2 class="display-6 fs-6 ">Calcular tu descuento <span class="fs-1"
                         style="display: block;">DESCUENTOS</span>
                 </h2>
-                <p>Descuento en tu próximo viaje indicando el costo.</p>
+                <p>Descuento indicando el costo.</p>
             </div>
         </div>
 
@@ -92,19 +92,20 @@
 
         <div class="row text-center">
             <div class="col align-self-center ">
-                <h2 class="display-6 fs-6 ">DESCUENTOS<span class="fs-1" style="display: block;">Buscá tu
+                <h2 class="display-6 fs-6 ">DESCUENTOS<span class="fs-1" style="display: block;">Buscar tu
                         descuento</span>
                 </h2>
-                <p>Escribí tu correo</p>
+                <p>Indicando tu correo</p>
             </div>
         </div>
 
-        <form action="vercliente" method="get">
+        <form action="infocliente.jsp" method="get">
             <div class="row text-center">
                 <label>Tu correo</label>
                 <input name="correo" type="text" />
-            </div>
+            
             <input type="submit" value="Ver" />
+        </div>
         </form>
     </section>
 
