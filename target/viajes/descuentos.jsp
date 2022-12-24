@@ -57,12 +57,7 @@
         <form action="nuevocliente" method="post">
             <div class="row" style="padding: 1%;">
                 <div class="col">
-                    <input type="text" class="form-control" id="Nombre" placeholder="Nombre">
-                </div>
-                <div class="col">
-                    <input type="text" class="form-control" id="Apellido" placeholder="Apellido">
-                </div>
-            </div>
+                    
             <div class="form-group" style="padding: 1%;">
                 <input type="text" class="form-control" id="Correo" placeholder="Correo">
             </div>
