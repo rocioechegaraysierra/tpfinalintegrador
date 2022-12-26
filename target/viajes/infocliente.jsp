@@ -1,6 +1,5 @@
 <%@ page contentType="text/html" pageEncoding="utf-8" %>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,9 +54,10 @@
                 <h2 class="display-6 fs-6 ">Tu registro en <span class="fs-1"
                         style="display: block;">DESCUENTOS</span>
                 </h2>
+                
                 <h2>Tu correo: ${c.getCorreo()}</h2>
-                <p>Categoria: ${c.getCategoria}</p>
-                <p>Costo: ${c.getCosto}</p>
+                <p>Categoria: ${c.getCategoria()}</p>
+                <p>Costo: ${c.getCosto()}</p>
 
             </div>
         </div>

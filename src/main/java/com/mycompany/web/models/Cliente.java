@@ -3,22 +3,14 @@ package com.mycompany.web.models;
 import java.io.Serializable;
 
 public class Cliente implements Serializable {
-        private int id;
+
         private double costo,descuento;
         private String correo,categoria;
 
         public Cliente(){
     
         }
-    
-        public int getId(){
-            return id;
-        }
-    
-        public void setId(int nuevoId){
-            this.id = nuevoId;
-        }
-    
+
               
         public String getCorreo(){
             return correo;

@@ -16,7 +16,9 @@ import jakarta.servlet.http.HttpServletResponse;
 public class VerServlet extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String s = (req.getParameter("correo"));
+        String s;
+        
+        s = (req.getParameter("correob")).toString();
 
         Cliente registro = AccionesCliente.verCliente(s);
 

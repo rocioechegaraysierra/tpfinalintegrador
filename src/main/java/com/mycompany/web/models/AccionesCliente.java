@@ -51,28 +51,30 @@ public static Cliente verCliente(String correoAConsultar){
     try {
         Class.forName("com.mysql.jdbc.Driver");
         Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/viajes","root","");
-
-        String query = "SELECT * FROM cliente WHERE correo_cliente=?";
-
+        String query = "SELECT * FROM cliente WHERE correo=?"; 
+        
         PreparedStatement pst = conexion.prepareStatement(query);
+  
         
         pst.setString(1, correoAConsultar);
 
         ResultSet consultaCliente = pst.executeQuery();
-
-        if (consultaCliente.next()){
-            clienteADevolver.setCorreo( consultaCliente.getString(1));
+       
+        if (consultaCliente.next()){ 
+            clienteADevolver.setCorreo(consultaCliente.getString(1));
             clienteADevolver.setCategoria(consultaCliente.getString(2));
             clienteADevolver.setCosto(consultaCliente.getDouble(3));
-            conexion.close();
+            conexion.close();       
         }
+               
     } catch (Exception e){
         System.out.println(e);
         System.out.println("No se pudo consultar descuento del cliente");
     }
 
     return clienteADevolver;
-}    
-
-    
+} 
+   
 }
+    
+
