@@ -59,23 +59,21 @@
                 <div class="col">
                     
             <div class="form-group" style="padding: 1%;">
-                <input type="text" class="form-control" id="Correo" placeholder="Correo">
+                <input type="text" class="form-control" id="Correo" name= "correo" placeholder="Correo">
             </div>
-
             <div class="form-group" style="padding: 1%;">
-                <input type="text" class="form-control" id="Costo" placeholder="Costo total del viaje">
+                <input type="text" class="form-control" id="Costo" name= "costo" placeholder="Costo total del viaje">
             </div>
 
             <div class="form-group col-16" style="padding: 1%;">
                 <label>Categoria</label>
-                <select class="form-control" id="Categoria">
+                <select class="form-control" id="Categoria" name="categoria">
                     <option selected>Elegir...</option>
                     <option>Jubilados</option>
                     <option>Menores</option>
                     <option>Estudiantes</option>
                 </select>
             </div>
-
             <div class="row text-center">
                 <div class="col align-self-center">
                     <button type="submit" class="btn btn-secondary btn-lg">Enviar</button>

@@ -9,15 +9,16 @@ public class AccionesCliente {
 //Insertar cliente y realizar descuento
 
 public static int registrarCliente(Cliente c){
+
     int estado = 0;
 
     try {
         Class.forName("com.mysql.jdbc.Driver");
-        Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:8080/descuentos","root","");
+        Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/viajes","root","");
 
         String query = "INSERT INTO cliente(correo,categoria,costo) VALUES (?,?,?)";
 
-            String correo = c.getCorreo();
+        String correo = c.getCorreo();
         String categoria = c.getCategoria();
         double costo = c.getCosto();
 
@@ -49,7 +50,7 @@ public static Cliente verCliente(String correoAConsultar){
 
     try {
         Class.forName("com.mysql.jdbc.Driver");
-        Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:8080/descuentos","root","");
+        Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost/viajes","root","");
 
         String query = "SELECT * FROM cliente WHERE correo_cliente=?";
 
@@ -60,10 +61,9 @@ public static Cliente verCliente(String correoAConsultar){
         ResultSet consultaCliente = pst.executeQuery();
 
         if (consultaCliente.next()){
-            clienteADevolver.setId( consultaCliente.getInt(1));
-            clienteADevolver.setCorreo( consultaCliente.getString(2));
-            clienteADevolver.setCategoria(consultaCliente.getString(3));
-            clienteADevolver.setCosto(consultaCliente.getDouble(4));
+            clienteADevolver.setCorreo( consultaCliente.getString(1));
+            clienteADevolver.setCategoria(consultaCliente.getString(2));
+            clienteADevolver.setCosto(consultaCliente.getDouble(3));
             conexion.close();
         }
     } catch (Exception e){

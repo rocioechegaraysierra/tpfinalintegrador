@@ -38,7 +38,6 @@ public class Cliente implements Serializable {
 
         public void setCosto(double nuevoCosto){
             this.costo = nuevoCosto;
-            this.calcularDescuento();
         }
         
         public double getCosto(){

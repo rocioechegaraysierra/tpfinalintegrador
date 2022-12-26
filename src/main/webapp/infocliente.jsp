@@ -49,6 +49,21 @@
         </div>
     </nav>
 
+    <section>
+        <div class="row text-center">
+            <div class="col align-self-center ">
+                <h2 class="display-6 fs-6 ">Tu registro en <span class="fs-1"
+                        style="display: block;">DESCUENTOS</span>
+                </h2>
+                <h2>Tu correo: ${c.getCorreo()}</h2>
+                <p>Categoria: ${c.getCategoria}</p>
+                <p>Costo: ${c.getCosto}</p>
+
+            </div>
+        </div>
+ 
+    </section>
+
 
     <br>
     <footer style="background-color: #F9A72B; text-align: center; font-family: 'Georgia'; font-size:medium" ;>
