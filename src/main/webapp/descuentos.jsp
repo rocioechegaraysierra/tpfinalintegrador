@@ -85,7 +85,7 @@
                         </div>
 
             </form>
-
+<br>
 
             <div class="row text-center">
                 <div class="col align-self-center ">
@@ -97,11 +97,12 @@
             </div>
 
             <form action="vercliente" method="get">
-                <div class="row text-center">
-                    <label>Tu correo</label>
-                    <input name="correob" type="text" />
-
-                    <input type="submit" value="Ver" />
+                <div class="row text-center" style="padding: 1%;">
+                    <div class="col align-self-center">
+                        <label>Tu correo</label>
+                        <input name="correob" type="text" />
+                        <button type="submit" class="btn btn-secondary btn-sm">Buscar</button>
+                    </div>
                 </div>
             </form>
         </section>

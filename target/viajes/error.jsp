@@ -55,8 +55,9 @@
             </h2>
             <p>Intentalo nuevamente.</p>
         </div>
+        <a href="index.html">Volver</a>
     </div>
-    <a href="index.html">Volver</a>
+
 
     <br>
     <footer style="background-color: #F9A72B; text-align: center; font-family: 'Georgia'; font-size:medium" ;>

@@ -6,7 +6,7 @@ import java.sql.*;
 
 public class AccionesCliente {
 
-//Insertar cliente y realizar descuento
+//Insertar cliente
 
 public static int registrarCliente(Cliente c){
 
@@ -43,7 +43,7 @@ public static int registrarCliente(Cliente c){
 }
 
 
-//Consultar descuento por correo
+//Consultar por correo
 
 public static Cliente verCliente(String correoAConsultar){
     Cliente clienteADevolver = new Cliente();

@@ -58,7 +58,7 @@
                 <h2>Tu correo: ${c.getCorreo()}</h2>
                 <p>Categoria: ${c.getCategoria()}</p>
                 <p>Costo: ${c.getCosto()}</p>
-
+                <a href="index.html">Volver</a>
             </div>
         </div>
  
